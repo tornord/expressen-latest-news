@@ -32,8 +32,8 @@ nav {
 		transform: rotate(-90deg);
 	}
 	svg.logo {
-		width: calc(min(314px, 100vw - 200px));
-		margin-left: calc(50vw - (min(314px, 100vw - 200px) + 100px) / 2);
+		width: calc(min(314px, 100vw - 186px));
+		margin-left: calc(50vw - (min(314px, 100vw - 186px) + 92px) / 2);
 	}
 	.search {
 		float: right;
@@ -41,14 +41,14 @@ nav {
 		border: 3px solid #0366a0;
 		background-color: #6badd3;
 		padding: 8px;
-		min-width: 108px;
+		min-width: 100px;
 		max-width: 168px;
-		width: calc(108px + (100vw - 530px) / 3);
+		width: calc(100px + (100vw - 530px) / 3);
 		border-radius: 22px;
 		input {
-			min-width: 84px;
+			min-width: 76px;
 			max-width: 144px;
-			width: calc(84px + (100vw - 530px) / 3);
+			width: calc(76px + (100vw - 530px) / 3);
 			border: none;
 			background-color: #6badd3;
 			font-size: 16px;
