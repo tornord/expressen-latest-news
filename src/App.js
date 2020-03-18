@@ -20,7 +20,12 @@ function App() {
 				{state.map((d, i) => (
 					<li key={i}>
 						<a href={d.link}>
-							<time className="number">{new Date(d.pubDate).toLocaleTimeString("sv-SE").slice(0, 5)}</time>
+							<time className="number">
+								{new Date(d.pubDate)
+									.toLocaleTimeString("sv-SE")
+									.replace(/\u200E/g, "")
+									.slice(0, 5)}
+							</time>
 							<span className="title">{d.title}</span>
 						</a>
 					</li>

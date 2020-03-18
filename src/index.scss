@@ -32,8 +32,9 @@ nav {
 		transform: rotate(-90deg);
 	}
 	svg.logo {
-		width: calc(min(314px, 100vw - 186px));
-		margin-left: calc(50vw - (min(314px, 100vw - 186px) + 92px) / 2);
+		max-width: 314px;
+		width: calc(100vw - 186px);
+		margin-left: calc(50vw - (314px + 92px) / 2);
 	}
 	.search {
 		float: right;
@@ -58,6 +59,9 @@ nav {
 		input::placeholder {
 			color: #fff;
 		}
+		input::-ms-input-placeholder {
+			color: #fff;
+		}
 	}
 	.bottom {
 		position: absolute;
@@ -67,6 +71,14 @@ nav {
 		bottom: 0px;
 		background-color: #0366a0;
 		z-index: -1;
+	}
+}
+
+@media (max-width: 499px) {
+	nav {
+		svg.logo {
+			margin-left: calc(50vw - (100vw - 186px + 92px) / 2);
+		}
 	}
 }
 
@@ -86,6 +98,7 @@ nav {
 	}
 	ul {
 		padding-inline-start: 0px;
+		padding: 0;
 		li {
 			list-style: none;
 			padding: 5px 0;
@@ -101,7 +114,7 @@ nav {
 			a {
 				display: flex;
 				color: #212121;
-				text-decoration-line: none;
+				text-decoration: none;
 			}
 			a:hover {
 				text-decoration: underline;
