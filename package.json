@@ -1,17 +1,18 @@
 {
-	"name": "expressen",
+	"name": "expressen-latest-news",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"@testing-library/jest-dom": "^4.2.4",
-		"@testing-library/react": "^9.3.2",
-		"@testing-library/user-event": "^7.1.2",
-		"cors": "^2.8.5",
-		"express": "^4.17.1",
-		"react": "^16.13.0",
-		"react-dom": "^16.13.0",
-		"react-scripts": "3.4.0",
-		"rss-to-json": "^1.0.5"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "rss-to-json": "^1.1.3",
+    "web-vitals": "^1.0.1"
 	},
 	"scripts": {
 		"start": "./node_modules/.bin/concurrently \"node src/server.js\" \"react-scripts start\"",
@@ -35,7 +36,7 @@
 		]
 	},
 	"devDependencies": {
-		"concurrently": "^5.1.0",
-		"node-sass": "^4.13.1"
+    "concurrently": "^6.0.2",
+    "node-sass": "^5.0.0"
 	}
 }
